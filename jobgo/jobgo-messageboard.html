@@ -1,160 +1,196 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Message board &middot; Jobgo International</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <link href="../bootstrap-2.3.2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <!-- Le styles -->
     <style type="text/css">
-      body {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        background-color: #f5f5f5;
-      }
-
-      .form-signin {
-        max-width: 500px;
-        height: 500px;
-        padding: 19px 29px 29px;
-        margin: 0 auto 20px;
-        background-color: #fff;
-        border: 1px solid #e5e5e5;
-        -webkit-border-radius: 5px;
-           -moz-border-radius: 5px;
-                border-radius: 5px;
-        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-                box-shadow: 0 1px 2px rgba(0,0,0,.05);
-        margin:20px;
-      }
-      .form-signin .form-signin-heading,
-      .form-signin .checkbox {
-        margin-bottom: 10px;
-      }
-      .form-signin input[type="text"],
-      .form-signin input[type="password"] {
-        font-size: 16px;
-        height: auto;
-        margin-bottom: 15px;
-        padding: 7px 9px;
-      }
-      .form-signin-right{
-        max-width: 300px;
-        height: 500px;
-        padding: 19px 29px 29px;
-        margin: 0 auto 20px;
-        background-color: #fff;
-        border: 1px solid #e5e5e5;
-        -webkit-border-radius: 5px;
-           -moz-border-radius: 5px;
-                border-radius: 5px;
-        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-                box-shadow: 0 1px 2px rgba(0,0,0,.05);
-        margin-left:580px;
-        margin-top:-570px;
-       }
-       .mess_space
-       {
-         width:480px;
-         height:50px;  
-       }
-       .ck-y
+        body
         {
-          margin-left:150px;
-          min-height: 20px;
-          padding-left: 20px;  
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+        
+        .form-signin
+        {
+            max-width: 500px;
+            height: 500px;
+            padding: 19px 29px 29px;
+            margin: 0 auto 20px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            margin: 20px;
+        }
+        .form-signin .form-signin-heading, .form-signin .checkbox
+        {
+            margin-bottom: 10px;
+        }
+        .form-signin input[type="text"], .form-signin input[type="password"]
+        {
+            font-size: 16px;
+            height: auto;
+            margin-bottom: 15px;
+            padding: 7px 9px;
+        }
+        .form-signin-right
+        {
+            max-width: 300px;
+            height: 500px;
+            padding: 19px 29px 29px;
+            margin: 0 auto 20px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            margin-left: 580px;
+            margin-top: -570px;
+        }
+        .mess_space
+        {
+            width: 400px;
+            height: 50px;
+        }
+        .ck-y
+        {
+            margin-left: 150px;
+            min-height: 20px;
+            padding-left: 20px;
         }
         .ck-k
         {
-          margin-left:230px;
-          min-height: 20px;
-          padding-left: 20px;
-          margin-top:-28px;   
+            margin-left: 230px;
+            min-height: 20px;
+            padding-left: 20px;
+            margin-top: -28px;
         }
         .ck-k3
         {
-          margin-left:350px;
-          min-height: 20px;
-          padding-left: 20px;
-          margin-top:-23px;  
+            margin-left: 350px;
+            min-height: 20px;
+            padding-left: 20px;
+            margin-top: -23px;
         }
         .allchk
         {
-         margin-top:-45px;   
+            margin-top: -45px;
         }
         .btc
         {
-         margin-left:413px;    
+            margin-left: 430px;
+            margin-top:-117px;
+            width:82px;
         }
-       
     </style>
-
     <link href="../bootstrap-2.3.2/docs/assets/css/bootstrap-responsive.css" rel="stylesheet"
         type="text/css" />
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
-
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../../assets/ico/favicon.png">
-  </head>
-
-  <body>
-
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+</head>
+<body>
     <div class="container">
-
-      <form class="form-signin">
-       <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="../index.html" id="logout">Log out</a></li>
-        </ul>
-        <h3 class="muted">Message Board</h3>
-      </div>
-         <button class="btn btn-primary" type="button">Messages <span class="badge">4</span></button>
-         <br /><br />
-         <div class="allchk">
-         <label class="ck-y">
-          <input type="checkbox" value="remember-me" class="ck-y"> All
-         </label>
-         <label class="ck-k">
-          <input type="checkbox" value="remember-me"> Past 7 days
-         </label>
-         <label class="ck-k3">
-           <input type="checkbox" value="remember-me"> Today
-         </label>
-         </div>
-       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-         <textarea name="message" rows="10" cols="30" class="mess_space" placeholder="Start writing.......you can hit enter to send"></textarea>
-            
-         
-
-        <button class="btc btn btn-large btn-primary" type="submit">Send</button>
-      </form>
-
-      <form class="form-signin-right">
+        <form class="form-signin">
+        <div class="masthead">
+            <ul class="nav nav-pills pull-right">
+                <li><a href="../index.html" id="logout">Log out</a></li>
+            </ul>
+            <h3 class="muted">
+                Message Board</h3>
+        </div>
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">4</span></button>
+        <br />
+        <br />
+        <div class="allchk">
+            <label class="ck-y">
+                <input type="checkbox" value="remember-me" class="ck-y">
+                All
+            </label>
+            <label class="ck-k">
+                <input type="checkbox" value="remember-me">
+                Past 7 days
+            </label>
+            <label class="ck-k3">
+                <input type="checkbox" value="remember-me">
+                Today
+            </label>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <textarea name="message" rows="10" cols="30" class="mess_space" placeholder="Start writing.......you can hit enter to send"></textarea>
+        <button class="btc btn btn-large btn-primary" type="submit">
+            Send</button>
+        </form>
+        <form class="form-signin-right">
         <h2 class="form-signin-heading">Users</h2>
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Person's name
-         </label>
-         <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Person's name
-         </label>
-         <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Person's name
-         </label>
-      </form>
-    </div> <!-- /container -->
 
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="..." alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">
+                    Media heading</h4>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="..." alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">
+                    Media heading</h4>
+            </div>
+        </div>
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me">
+            Person's name
+        </label>
+        </form>
+    </div>
+    <!-- /container -->
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -171,6 +207,5 @@
     <script type="text/javascript" src="../../assets/js/bootstrap-collapse.js"></script>
     <script type="text/javascript" src="../../assets/js/bootstrap-carousel.js"></script>
     <script src="../bootstrap-2.3.2/js/jobgo.js" type="text/javascript"></script>
-
-  </body>
+</body>
 </html>
