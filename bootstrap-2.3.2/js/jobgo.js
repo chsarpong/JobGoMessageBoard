@@ -1,4 +1,4 @@
 ﻿
     document.getElementById("btgo").onclick = function () {
-        location.href = "jobgo-messageboard.html";
+        location.href = "jobgo/jobgo-messageboard.html";
     };
