@@ -159,6 +159,14 @@
             margin-top: -28px;
             margin-left: -17px;
         }
+        .masthead-users
+        {
+            background-color: #563d7c;
+            width: 276px;
+            margin-top: -28px;
+            margin-left: -28px;
+            height:40px;
+        }
         a {
             color: #fff;
             text-decoration: none;
@@ -253,9 +261,12 @@
          </form>
 
         <!-- Users to the right-->
-        <form class="form-signin-right scrollspy-example-users">
-        <h3 class="muted_two">
-            Users</h3>
+        <form class="form-signin-right">
+        <div class="masthead-users">
+            <h3 class="muted">
+                Users</h3>
+        </div>
+         <div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example-users text_area">
         <div class="media">
             <div class="media-left">
                 <a href="#">
@@ -264,7 +275,7 @@
             </div>
             <div class="media-body">
                 <h4 class="media-heading img_right modal-header-level">
-                    Melmit Jarvis</h4>
+                    Markku Riekkinen</h4>
             </div>
         </div>
         <div class="media">
@@ -409,10 +420,11 @@
                 <h4 class="media-heading img_right modal-header-level">
                     Elena Sorvis</h4>
             </div>
+        </div>
         </div>
         <label class="checkbox">
             <input type="checkbox" value="remember-me">
-            Person's name
+            13 Users logged in
         </label>
         </form>
     </div>

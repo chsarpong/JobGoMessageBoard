@@ -17,7 +17,7 @@
       }
 
       .form-signin {
-        max-width: 300px;
+        max-width: 420px;
         padding: 19px 29px 29px;
         margin: 0 auto 20px;
         background-color: #fff;
@@ -40,8 +40,20 @@
         height: auto;
         margin-bottom: 15px;
         padding: 7px 9px;
+        width:300px;
       }
-
+      .btn-move
+      {
+       margin-left:320px;
+       width:100px;    
+       margin-top:-88px;
+      }
+      .radio,
+        .checkbox {
+          min-height: 20px;
+          padding-left: 20px;
+          margin-top:-20px;
+        }
     </style>
 
     <link href="bootstrap-2.3.2/docs/assets/css/bootstrap-responsive.css" rel="stylesheet"
@@ -66,10 +78,11 @@
       <form class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
         <input type="text" class="input-block-level" placeholder="Username : Fredrik">
+        <button id="btgo" class="btn btn-large btn-secondary btn-move" type="button">Sign in</button>
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
-        <button id="btgo" class="btn btn-large btn-primary" type="button">Sign in</button>
+        
 
       </form>
 
